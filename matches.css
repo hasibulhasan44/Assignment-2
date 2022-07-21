@@ -158,9 +158,9 @@ main{
 .fa-comment-dots{
     margin: 0 7px 0 38px;
 }
-/*---------------------- 
-    Footer Area Styles
-------------------------*/
+
+/* Footer  */
+
 footer{
     background-color: #161616;
     height: 250px;
@@ -189,9 +189,8 @@ nav a{
     color: #ffffff;
     margin-top: 20px;
 }
-.social-handle{
-    display: none;
-}
+/* Footer  */
+
 /*----------------- 
     Media Queries
 -------------------*/
@@ -288,11 +287,7 @@ nav a{
         flex-direction: column;
         align-items: center;
         row-gap: 15px;
-     }
-     .social-handle{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px 0px 20px 0px;
+        margin-bottom: 25px;
      }
      .fa-brands{
         font-size: 26px;
@@ -301,123 +296,4 @@ nav a{
      .view-all-button{
         display: none;
      }
-    }     
-    /* Tablet Responsiveness */
-
-    @media  screen and (min-width:689px) and (max-width:992px){
-        html{
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-        .header-area{
-            display: flex;
-            justify-content: center;
-            width: 95%;
-            padding: 30px 25px 0px 25px;
-            margin-top: 25px;
-            color: white;
-            border-radius: 25px;
-            position: relative;
-        }
-        .header-area-text{
-            width: 400px;
-            padding-left: 0;
-        }
-        .header-area-image{
-            padding: 10px 10px 25px 50px;
-        }
-        .header-area-image img{
-            width: 320px;
-            padding: 10px 25px 25px 0px;
-        }
-        .ronaldo{
-            display: none;
-        }
-        .banner-image{
-            position: static;
-            opacity: 1;
-        }
-        .header-area-h1{
-            font-size: 60px;
-            margin: 0px 0px 10px 15px;
-            width: 500px;
-            padding: 10px 25px 0px 25px;
-        }
-        .header-area-p{
-            width: 400px;
-            padding: 0px 0px 25px 40px;
-        }
-        .header-area-button{
-            background-color: #DD0000;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 25px 0px 0px 37px;       
-        }
-        main{
-            width: 100%;
-        }
-        .second-section{
-            display: block;
-            width: 100%;
-        }
-        .side-area{
-            display: flex;
-            flex-direction: row;
-            background-color: #ffffff;
-            width: 100%;
-            justify-content: space-around;
-            margin: 0;
-            height: 25px;
-        }
-        .side-area-buttons{
-            height: 25px;
-            width: 200px;
-            border: 3px solid #161616;
-        }
-        .articles-area{
-            width: 100%;
-        }
-        .art{
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            padding: 0;
-            margin-top: 20px;
-            width: 100%;
-        }
-        .single-blog{
-            width: 75%;
-        }
-        .blog-image{
-            width: 90%;
-        }
-        .blog-area-h2{
-            width: 90%;
-        }
-        .no-needed{
-            display: none;
-        }
-        .view-all-button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 15px 0px 80px 0px;
-        }
-        .view-all-button a{
-            text-align: center;
-            text-decoration: none;
-            background-color: #DD0000;
-            color: white;
-            padding: 20px;
-            border-radius: 15px;
-            width: 200px;
-        }
-        nav{
-            width: 800px;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        hr{
-            width: 95%;
-        }
-    }
+    }  
