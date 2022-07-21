@@ -7,9 +7,11 @@
 -------------------*/
 body{
     font-family: 'Montserrat', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
 }
 .section-area{
-    margin-bottom: 74px;
+    margin-bottom: 34px;
 }
 h1{
     font-size: 35px;
@@ -27,13 +29,17 @@ p{
 }
 .header-area{
     width: 1100px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border-radius: 20px;
     background-color: #161616;
 }
+.header-area-h1{
+    font-size: 50px;
+}
 .header-area-text{
     color: white;
-    padding-left: 25px;
+    padding-left: 60px;
 }
 .header-area-button{
     margin-top: 40px;
@@ -47,8 +53,8 @@ p{
     padding-left: 10px;
 }
 .header-area-image{
-    padding-top: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-top: 80px;
 }
 /*------------------- 
     Main area styles
@@ -56,13 +62,14 @@ p{
 .side-area{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 15px;
     background-color: #0b0b0b;
     padding: 15px;
-    width: 270px;
+    width: 210px;
     height: 200px;
     border-radius: 10px;
-    margin:150px 15px 0px 120px;
+    margin:150px 15px 0px 0px;
 }
 .side-area-buttons{
     font-size: 17px;
@@ -80,10 +87,15 @@ p{
 /* Blog area styles */
 main{
     display: flex;
-    width: 1100px;
+    justify-content: center;
+    width: 1300px;
+}
+.second-section{
+    display: flex;
+    justify-content: center;
 }
 .articles-area{
-    width: 580px;
+    width: 100%;
     margin: 150px 0 150px 0;
     border-radius: 20px;
 }
@@ -91,11 +103,12 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 5px;
+    width: 730px;
 }
 .single-blog{
     border: 2px solid #424242;
     border-radius: 7px;
-    width: 234px;
+    width: 230px;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -112,6 +125,8 @@ main{
 }
 .blog-area-h2{
     margin-left: 15px;
+    font-size: 12px;
+    width: 90%;
 }
 .fa-clock{
     margin: 0 15px;
@@ -119,3 +134,141 @@ main{
 .fa-comment-dots{
     margin: 0 7px 0 38px;
 }
+/*---------------------- 
+    Footer Area Styles
+------------------------*/
+footer{
+    background-color: #161616;
+    height: 250px;
+}
+.footer-area-h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 25px;
+}
+hr{
+    width: 1300px;
+    border: 2px solid #0b0b0b;
+}
+.nav-area{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.social-handle{
+    display: none;
+}
+/*----------------- 
+    Media Queries
+-------------------*/
+@media screen and (max-width:688px) {
+    body{
+        margin-bottom: 0px;
+     }
+     .section-area{
+        width: 100%;
+     }
+     .header{
+        width: 100%;
+    }
+
+     .header-area{
+        width: 95%;
+        display: flex;
+        flex-direction: column;align-items: center;
+     }
+     .header-area-text{
+        width: 70%;
+        text-align: center;
+        margin-top: 40px;
+        padding: 0;
+     }
+     .header-area-h1{
+        margin: 0;
+        padding: 0;
+     }
+     .header-area-image{
+        margin-top: 30px;
+        padding: 0;
+        width: 75%;
+     }
+     main{
+        display: block;
+        width: 100%;
+     }
+     .second-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     /* .side-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     } */
+     .side-area{
+        margin: 0px;
+     }
+     .articles-area{
+        width: 100%;
+        margin-top: 75px;
+     }
+     .art{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 0px;
+     }
+     .single-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px 10px 0px;
+        border-radius: 15px;
+        width: 75%;
+     }
+     .blog-image-parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .blog-image{
+        width: 120%;
+        margin: 15px 0px 0px 0px;
+        
+     }
+     footer{
+        width: 100%;
+        height: 100%;
+     }
+     hr{
+        width: 95%;
+     }
+     nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+     }
+     .social-handle{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0px 20px 0px;
+     }
+     .fa-brands{
+        font-size: 26px;
+        color: white;
+     }
+    }     
